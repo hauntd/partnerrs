@@ -1,6 +1,23 @@
 @import "mixins.less";
 @import "reset.less";
 
+// Media Queries
+@screen-xs:                  480px;
+@screen-xs-min:              @screen-xs;
+@screen-phone:               @screen-xs-min;
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+@screen-tablet:              @screen-sm-min;
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+@screen-desktop:             @screen-md-min;
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+@screen-lg-desktop:          @screen-lg-min;
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
+
 html, body {
   height: 100%;
 }
@@ -25,7 +42,7 @@ h1.logo {
 }
 .content {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
   letter-spacing: 1px;
   font-size: 13pt;
   text-align: center;
@@ -35,8 +52,8 @@ h1.logo {
 }
 footer {
   position: relative;
-  margin-top: -70px;
-  height: 60px;
+  margin-top: -50px;
+  height: 40px;
   clear: both;
   padding-top: 10px;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -48,5 +65,19 @@ footer {
     &:hover {
       color: #fff;
     }
+  }
+}
+
+@media (max-width: @screen-xs-max) {
+  .content {
+    padding-top: 60px;
+    font-size: 12pt;
+    h1.logo {
+      margin-bottom: 0;
+      letter-spacing: 0;
+    }
+  }
+  footer {
+    font-size: 12pt;
   }
 }

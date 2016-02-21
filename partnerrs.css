@@ -225,6 +225,7 @@ h1.logo {
   padding: 110px 10px 0 10px;
 }
 footer {
+  letter-spacing: 1px;
   position: relative;
   margin-top: -50px;
   height: 40px;

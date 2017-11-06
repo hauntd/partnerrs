@@ -222,7 +222,10 @@ h1.logo {
   text-align: center;
   line-height: 1.35em;
   min-height: 300px;
-  padding: 110px 15px;
+  padding: 110px 5px;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
 footer {
   letter-spacing: 1px;

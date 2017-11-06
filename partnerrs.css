@@ -194,7 +194,7 @@ body {
 .wrapper {
   height: auto;
   min-height: 100%;
-  max-width: 494px;
+  max-width: 525px;
   margin: auto;
 }
 h1.logo {
@@ -222,7 +222,7 @@ h1.logo {
   text-align: center;
   line-height: 1.35em;
   min-height: 300px;
-  padding: 110px 0px;
+  padding: 110px 15px;
 }
 footer {
   letter-spacing: 1px;

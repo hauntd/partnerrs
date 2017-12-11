@@ -231,6 +231,7 @@ h2.customers {
     -moz-background-size: 330px 140px;
     -o-background-size: 330px 140px;
     background-size: 330px 140px;
+    zoom: 0.9;
   }
 }
 h2.customers:hover {

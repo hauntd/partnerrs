@@ -40,26 +40,19 @@ h1.logo {
   display: block;
   .at2x('logo@2x.png', 150px, 150px);
 }
-h1.customers {
+h2.customers {
   text-indent: -9999px;
-  background: url('customer.png') no-repeat;
-	background-position: -5px -5px;
-  width: 320px;
+  background-repeat: no-repeat;
+  background-image: url('customers.png');
+  background-position: 0 0;
+  .at2x('customers@2x.png', 330px, 140px);
+  width: 330px;
   height: 60px;
   margin: 5px auto auto;
   display: block;
-  .at2x('customers@2x.png', 320px, 60px);
-	
-}
-h1.customers.hover {
-  text-indent: -9999px;
-  background: url('customers.png') no-repeat;
-	background-position: -5px -75px;
-  width: 320px;
-  height: 60px;
-  margin: 5px auto auto;
-  display: block;
-	.at2x('customers@2x.png', 320px, 60px);
+  &:hover {
+    background-position: 0 -70px;
+  }
 }
 .content {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;

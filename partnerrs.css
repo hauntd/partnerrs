@@ -223,6 +223,16 @@ h1.customers {
   margin: 5px auto auto;
   display: block;
 }
+@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+  h1.customers {
+    background-image: url("customers@2x.png");
+	background-position: -5px -5px;
+    -webkit-background-size: 320px 60px;
+    -moz-background-size: 320px 60px;
+    -o-background-size: 320px 60px;
+    background-size: 320px 60px;
+  }
+}
 .customers:hover {
   text-indent: -9999px;
   background: url('customers.png') no-repeat;
@@ -233,19 +243,9 @@ h1.customers {
   display: block;
 }
 @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
-  h1.customers {
+  .customers:hover {
     background-image: url("customers@2x.png");
-		background-position: -5px -5px;
-    -webkit-background-size: 320px 60px;
-    -moz-background-size: 320px 60px;
-    -o-background-size: 320px 60px;
-    background-size: 320px 60px;
-  }
-}
-@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
-  h1.customers:hover {
-    background-image: url("customers@2x.png");
-		background-position: -5px -135px;
+	background-position: -5px -135px;
     -webkit-background-size: 320px 60px;
     -moz-background-size: 320px 60px;
     -o-background-size: 320px 60px;
